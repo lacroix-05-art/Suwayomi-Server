@@ -18,6 +18,7 @@ import suwayomi.tachidesk.graphql.directives.RequireAuthDirectiveWiring
 import suwayomi.tachidesk.graphql.mutations.BackupMutation
 import suwayomi.tachidesk.graphql.mutations.CategoryMutation
 import suwayomi.tachidesk.graphql.mutations.ChapterMutation
+import suwayomi.tachidesk.graphql.mutations.ComickMutation
 import suwayomi.tachidesk.graphql.mutations.DownloadMutation
 import suwayomi.tachidesk.graphql.mutations.ExtensionMutation
 import suwayomi.tachidesk.graphql.mutations.ImageMutation
@@ -33,6 +34,7 @@ import suwayomi.tachidesk.graphql.mutations.UserMutation
 import suwayomi.tachidesk.graphql.queries.BackupQuery
 import suwayomi.tachidesk.graphql.queries.CategoryQuery
 import suwayomi.tachidesk.graphql.queries.ChapterQuery
+import suwayomi.tachidesk.graphql.queries.ComickQuery
 import suwayomi.tachidesk.graphql.queries.DownloadQuery
 import suwayomi.tachidesk.graphql.queries.ExtensionQuery
 import suwayomi.tachidesk.graphql.queries.InfoQuery
@@ -90,6 +92,7 @@ val schema =
                 TopLevelObject(BackupQuery()),
                 TopLevelObject(CategoryQuery()),
                 TopLevelObject(ChapterQuery()),
+                TopLevelObject(ComickQuery()),
                 TopLevelObject(DownloadQuery()),
                 TopLevelObject(ExtensionQuery()),
                 TopLevelObject(InfoQuery()),
@@ -106,6 +109,7 @@ val schema =
                 TopLevelObject(BackupMutation()),
                 TopLevelObject(CategoryMutation()),
                 TopLevelObject(ChapterMutation()),
+                TopLevelObject(ComickMutation()),
                 TopLevelObject(DownloadMutation()),
                 TopLevelObject(ExtensionMutation()),
                 TopLevelObject(ImageMutation()),
